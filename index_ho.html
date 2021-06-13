@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles_gen.css" />
+    <link rel="stylesheet" href="styles_home.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="menu">
+        <a class="menu_icon">
+          <img
+            src="icons8-menu-256.png"
+            width="60"
+            height="60"
+            class="menupic"
+          />
+        </a>
+      </div>
+      <nav class="nav">
+        <ul class="navlist">
+          <li><a class="nav-link" href="#six_realms">Home</a></li>
+          <li>
+            <a class="nav-link" href="index_6w.html#deva">Deva</a>
+          </li>
+          <li><a class="nav-link" href="index_6w.html#asura">Asura</a></li>
+          <li><a class="nav-link" href="index_6w.html#manusya">Manusya</a></li>
+          <li>
+            <a class="nav-link" href="index_6w.html#tiryagyoni">Tiryagyoni</a>
+          </li>
+          <li><a class="nav-link" href="index_6w.html#preta">Preta</a></li>
+          <li><a class="nav-link" href="index_6w.html#naraka">Naraka</a></li>
+          <li>
+            <a class="nav-link" href="index_so.html">Sources and Links</a>
+          </li>
+          <li><a class="nav-link" href="index_fb.html">Feedback</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <img
+        src="004-mandala.svg"
+        alt="mandala logo"
+        class="mandala"
+        width="60"
+        height="60"
+        id="top_mandala"
+      />
+      <section id="six_realms">
+        <a href="index_6w.html"><h1>Six Realms</h1></a>
+        <p>
+          In Buddhist cosmology, they speak of the six realms of existence and
+          rebirth. These six realms can also be seen as six types of mind states
+          or psycho-emotional worlds where transmigration is understood as
+          shifts from one psycho-emotional formation to another. Indeed, in this
+          sense, one may even migrate through the different worlds within a
+          single day, within a couple of minutes, perhaps even seconds,
+          depending on momentary turbulence of your life or one may as well be
+          stuck in one of these worls for years, decades and aeons.
+        </p>
+      </section>
+      <img
+        src="018-mandala.svg"
+        alt="mandala logo"
+        class="mandala"
+        width="60"
+        height="60"
+        id="bottom_mandala"
+      />
+    </main>
+    <footer>
+      Web-Beyul Publications <span class="copyleft">&copy;</span><br /><br />
+      <time datetime="24-05-2021" id="time">May, 2021</time>
+    </footer>
+    <script>
+      /*
+       * Open the drawer when the menu ison is clicked.
+       */
+      var menu = document.querySelector(".menu_icon");
+      var main = document.querySelector("main");
+      var drawer = document.querySelector(".nav");
+
+      menu.addEventListener("click", function (e) {
+        drawer.classList.toggle("open");
+        e.stopPropagation();
+      });
+      main.addEventListener("click", function () {
+        drawer.classList.remove("open");
+      });
+    </script>
+  </body>
+</html>

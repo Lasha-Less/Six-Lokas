@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles_gen.css" />
+    <link rel="stylesheet" href="styles_fb.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="menu">
+        <a class="menu_icon">
+          <img src="icons8-menu-256.png" width="60" height="60" />
+        </a>
+      </div>
+      <nav class="nav">
+        <ul class="navlist">
+          <li><a class="nav-link" href="index.html#six_realms">Home</a></li>
+          <li>
+            <a class="nav-link" href="index_6w.html#deva">Deva</a>
+          </li>
+          <li><a class="nav-link" href="index_6w.html#asura">Asura</a></li>
+          <li><a class="nav-link" href="index_6w.html#manusya">Manusya</a></li>
+          <li>
+            <a class="nav-link" href="index_6w.html#tiryagyoni">Tiryagyoni</a>
+          </li>
+          <li><a class="nav-link" href="index_6w.html#preta">Preta</a></li>
+          <li><a class="nav-link" href="index_6w.html#naraka">Naraka</a></li>
+          <li>
+            <a class="nav-link" href="index_so.html">Sources and Links</a>
+          </li>
+          <li><a class="nav-link" href="#feedback">Feedback</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main id="all_feedback">
+      <h1 id="feedback">Feeback</h1>
+      <h3>You can offer your feedback here but only without attachments</h3>
+      <section id="feedback_main_section">
+        <form id="feedbak_form">
+          <label for="name" class="labels"
+            >How would you like to be addressed?</label
+          ><br />
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Your Name"
+          /><br /><br />
+          <label class="labels" for="email">Email</label><br />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="your@mail.com"
+          /><br /><br />
+          <label class="labels" id="radio_title"
+            >Did you have any familiarity with Six Worlds teachings before
+            visiting our page?</label
+          ><br />
+          <input type="radio" id="yes" name="familiarity" value="yes" />
+          <label class="labels" for="yes">Yes</label><br />
+          <input type="radio" id="somewhat" <br />
+          <label class="labels" for="somewhat">Somewhat</label><br />
+          <input type="radio" id="no" name="familiarity" value="no" />
+          <label class="labels" for="no">No</label><br />
+          <input
+            type="radio"
+            id="noremember"
+            name="familiarity"
+            value="noremember"
+          />
+          <label class="labels" for="noremember">I can't recall</label
+          ><br /><br />
+          <label class="labels" for="text">Comment</label><br />
+          <textarea
+            id="text"
+            name="text"
+            rows="5"
+            cols="60"
+            placeholder="comment, note, suggestion, criticism, blessings..."
+          >
+          </textarea
+          ><br /><br />
+          <input type="submit" value="Submit" class="button" />
+          <input type="reset" value="Reset" class="button" />
+        </form>
+      </section>
+      <h3 id="generosity">Thanks for visiting!</h3>
+    </main>
+    <footer>
+      Web-Beyul Publications <span class="copyleft">&copy;</span><br /><br />
+      <time datetime="24-05-2021" id="time">May, 2021</time>
+    </footer>
+    <script>
+      /*
+       * Open the drawer when the menu ison is clicked.
+       */
+      var menu = document.querySelector(".menu_icon");
+      var main = document.querySelector("main");
+      var drawer = document.querySelector(".nav");
+
+      menu.addEventListener("click", function (e) {
+        drawer.classList.toggle("open");
+        e.stopPropagation();
+      });
+      main.addEventListener("click", function () {
+        drawer.classList.remove("open");
+      });
+    </script>
+  </body>
+</html>

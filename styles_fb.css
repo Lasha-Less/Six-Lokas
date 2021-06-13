@@ -1,0 +1,138 @@
+/*
+26486b
+*/
+
+/*
+GENERAL
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*
+END GENERAL
+*/
+#all_feedback {
+  background-color: #95b6b3;
+  color: #3c3146;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  background-image: url(003-mandala_025.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 50% 90%;
+}
+
+/*#all_feedback::after {
+  content: "";
+  background: url(MWP_images/4721277-mandalas-flat-3-of-3/svg/015-mandala.svg);
+  repeat: no-repeat;
+  opacity: 0.5;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}*/
+
+#feedback {
+  padding-top: 40px;
+  text-align: center;
+}
+
+h3 {
+  padding-top: 20px;
+  padding-bottom: 40px;
+  max-width: 30em;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+#feedback_main_section {
+  max-width: 30em;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#feedback_form {
+  max-width: 30em;
+}
+
+label {
+  font-weight: 700;
+}
+
+input {
+  margin-top: 10px;
+  background: #d5debc;
+}
+
+.button {
+  background-color: #005f6a;
+  padding: 10px 20px;
+  font-weight: 600;
+  color: white;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 16px;
+  transition: transform 0.3s ease-out;
+}
+
+.button:hover {
+  transform: translateY(8px);
+}
+
+#generosity {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  cursor: pointer;
+  max-width: 30em;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+textarea {
+  background: #d5debc;
+  max-width: 30em;
+}
+
+.labels {
+  max-width: 30em;
+}
+
+@media screen and (max-width: 726px) {
+  #all_feedback {
+    background-size: 90% 90%;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  h3 {
+    max-width: 90vw;
+  }
+  #feedback_main_section {
+    max-width: 90vw;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  textarea {
+    max-width: 90%;
+  }
+}
+/*
+MAIN
+*/
+
+/*
+END MAIN
+*/

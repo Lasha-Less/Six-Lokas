@@ -1,0 +1,107 @@
+/*GENERAL*/
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: grid;
+  grid-template-columns: [cl1] auto [cl2];
+  grid-template-rows: [rl1] 60px [rl2] auto [rl3] 180px [rl4];
+  min-height: 100vh;
+}
+/*END GENERAL*/
+
+/*HEADER*/
+
+header {
+  grid-column: cl1 / cl2;
+  grid-row: rl1 / rl2;
+}
+
+.nav {
+  z-index: 10;
+  width: 250px;
+  height: 250px;
+  background: #005f6a;
+  /*position: absolute;*/
+  position: fixed;
+  top: 56px;
+  left: 0;
+  /* This trasform moves the drawer off canvas. */
+  -webkit-transform: translate(-300px, 0);
+  transform: translate(-300px, 0);
+  /* Optionally, we animate the drawer. */
+  transition: transform 0.3s ease;
+}
+
+.nav.open {
+  /* This one as far as I know opens the drawer/menu */
+  -webkit-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+
+.menu_icon {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 60px;
+  width: 100%;
+  background-color: #005f6a;
+  z-index: 10;
+}
+
+.navlist {
+  padding: 10px;
+  line-height: 1.5;
+}
+
+.navlist a {
+  text-decoration: none;
+  color: #fc7920;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 16px;
+  font-weight: 700;
+  transition: font-size 0.2s;
+}
+
+.navlist a:hover {
+  font-size: 20px;
+}
+
+/*END HEADER*/
+
+/*MAIN*/
+
+main {
+  grid-column: cl1 / cl2;
+  grid-row: rl2 / rl3;
+}
+
+/*END MAIN*/
+
+/*FOOTER*/
+
+footer {
+  grid-column: cl1 / cl2;
+  grid-row: rl3 / rl4;
+  background-color: #002b30;
+  color: #fc7920;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-image: url(webbeyul.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.copyleft {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 20px;
+  display: inline-block;
+  transform: rotate(180deg);
+}
+/*END FOOTER*/
